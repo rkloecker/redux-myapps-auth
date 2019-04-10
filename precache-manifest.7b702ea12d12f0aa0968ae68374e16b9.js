@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/react-myapps-auth/static/js/runtime~main.7f00a67b.js"
   },
   {
-    "revision": "d932db00b0d724509658",
-    "url": "/react-myapps-auth/static/js/main.d932db00.chunk.js"
+    "revision": "35971b54dd00709c624b",
+    "url": "/react-myapps-auth/static/js/main.35971b54.chunk.js"
   },
   {
     "revision": "e07f82158582c413149e",
     "url": "/react-myapps-auth/static/js/2.e07f8215.chunk.js"
   },
   {
-    "revision": "d932db00b0d724509658",
+    "revision": "35971b54dd00709c624b",
     "url": "/react-myapps-auth/static/css/main.859a48cd.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/react-myapps-auth/static/css/2.5de363f7.chunk.css"
   },
   {
-    "revision": "ce828ac83155862fb55799d757f206c8",
+    "revision": "6bdce1f7ef628c485165f3fd62185012",
     "url": "/react-myapps-auth/index.html"
   }
 ];
