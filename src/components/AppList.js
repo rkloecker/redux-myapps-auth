@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { Container, ListGroup, ListGroupItem, Button } from "reactstrap";
+import React, { Component } from "react";
+import { Spinner, ListGroup, ListGroupItem, Button } from "reactstrap";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { connect } from "react-redux";
 import { getapps, getapp, deleteapp, updateapp } from "../actions/appActions";
@@ -32,6 +32,7 @@ class AppList extends Component {
     return (
       <>
         {loading ? loadingText : ""}
+        <Spinner color="secondary" />
         {errmsg ? errorText : ""}
         <TransitionGroup className="">
           {apps.map(
@@ -69,16 +70,16 @@ class AppList extends Component {
                     ) : null}
                   </ListGroupItem>
                   <ListGroupItem className="text-white bg-secondary">
-                    {description_short}
+                    Used Technologies: {description_short}
                   </ListGroupItem>
                   <ListGroupItem className="text-white bg-secondary">
-                    {description_long}
+                    App Description: {description_long}
                   </ListGroupItem>
                   <ListGroupItem className="text-white bg-secondary">
-                    {repo_url}
+                    Git Repo URL: {repo_url}
                   </ListGroupItem>
                   <ListGroupItem className="text-white bg-secondary">
-                    {url}
+                    Deploy URL: {url}
                   </ListGroupItem>
                 </ListGroup>
               </CSSTransition>
