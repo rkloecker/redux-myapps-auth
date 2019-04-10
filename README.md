@@ -1,3 +1,12 @@
+# react-myapps-auth
+
+### CRUD app with auth using jsonwebtoken
+
+### [Deployment with gh-pages](http://rkloecker.github.io/react-myapps-auth)
+
+### Backend: Express api [my_apps_auth_backend](https://github.com/rkloecker/my_apps_auth_backend) 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
