@@ -26,13 +26,18 @@ class AppList extends Component {
 
   render() {
     const { apps, loading, errmsg } = this.props.app;
-    const loadingText = <p>... app is loading</p>;
+    const loadingElement = (
+      <>
+        <Spinner color="secondary" />
+        <h3>app is loading</h3>
+      </>
+    );
     const errorText = <p>{errmsg}</p>;
     // console.log(apps);
     return (
       <>
-        {loading ? loadingText : ""}
-        <Spinner color="secondary" />
+        {loading ? loadingElement : ""}
+
         {errmsg ? errorText : ""}
         <TransitionGroup className="">
           {apps.map(
@@ -70,10 +75,10 @@ class AppList extends Component {
                     ) : null}
                   </ListGroupItem>
                   <ListGroupItem className="text-white bg-secondary">
-                    Used Technologies: {description_short}
+                    App Description: {description_short}
                   </ListGroupItem>
                   <ListGroupItem className="text-white bg-secondary">
-                    App Description: {description_long}
+                    Used Technologies : {description_long}
                   </ListGroupItem>
                   <ListGroupItem className="text-white bg-secondary">
                     Git Repo URL: {repo_url}

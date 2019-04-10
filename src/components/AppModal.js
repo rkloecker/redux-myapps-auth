@@ -58,6 +58,10 @@ class AppModal extends Component {
 
   render() {
     // console.log(this.props);
+    // dont show until loading is finished
+    if (this.props.app.loading) {
+      return null;
+    }
     return (
       <div>
         {this.props.isAuthenticated ? (
