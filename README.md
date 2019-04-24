@@ -2,7 +2,7 @@
 
 ### CRUD app with auth using jsonwebtoken
 
-### [Deployment with gh-pages](http://rkloecker.github.io/react-myapps-auth)
+### [Deployment with gh-pages](http://rkloecker.github.io/redux-myapps-auth)
 
 ### Backend: Express api [my_apps_auth_backend](https://github.com/rkloecker/my_apps_auth_backend) 
 
