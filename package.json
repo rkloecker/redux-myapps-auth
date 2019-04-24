@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "http://rkloecker.github.io/react-myapps-auth",
+  "homepage": "http://rkloecker.github.io/redux-myapps-auth",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
