@@ -1,15 +1,15 @@
 {
-  "main.css": "/react-myapps-auth/static/css/main.859a48cd.chunk.css",
-  "main.js": "/react-myapps-auth/static/js/main.35971b54.chunk.js",
-  "main.js.map": "/react-myapps-auth/static/js/main.35971b54.chunk.js.map",
-  "runtime~main.js": "/react-myapps-auth/static/js/runtime~main.7f00a67b.js",
-  "runtime~main.js.map": "/react-myapps-auth/static/js/runtime~main.7f00a67b.js.map",
-  "static/css/2.5de363f7.chunk.css": "/react-myapps-auth/static/css/2.5de363f7.chunk.css",
-  "static/js/2.e07f8215.chunk.js": "/react-myapps-auth/static/js/2.e07f8215.chunk.js",
-  "static/js/2.e07f8215.chunk.js.map": "/react-myapps-auth/static/js/2.e07f8215.chunk.js.map",
-  "index.html": "/react-myapps-auth/index.html",
-  "precache-manifest.7b702ea12d12f0aa0968ae68374e16b9.js": "/react-myapps-auth/precache-manifest.7b702ea12d12f0aa0968ae68374e16b9.js",
-  "service-worker.js": "/react-myapps-auth/service-worker.js",
-  "static/css/2.5de363f7.chunk.css.map": "/react-myapps-auth/static/css/2.5de363f7.chunk.css.map",
-  "static/css/main.859a48cd.chunk.css.map": "/react-myapps-auth/static/css/main.859a48cd.chunk.css.map"
+  "main.css": "/redux-myapps-auth/static/css/main.bcc41ff2.chunk.css",
+  "main.js": "/redux-myapps-auth/static/js/main.33aec79d.chunk.js",
+  "main.js.map": "/redux-myapps-auth/static/js/main.33aec79d.chunk.js.map",
+  "runtime~main.js": "/redux-myapps-auth/static/js/runtime~main.b102a74a.js",
+  "runtime~main.js.map": "/redux-myapps-auth/static/js/runtime~main.b102a74a.js.map",
+  "static/css/2.4f64ee0d.chunk.css": "/redux-myapps-auth/static/css/2.4f64ee0d.chunk.css",
+  "static/js/2.bbec12af.chunk.js": "/redux-myapps-auth/static/js/2.bbec12af.chunk.js",
+  "static/js/2.bbec12af.chunk.js.map": "/redux-myapps-auth/static/js/2.bbec12af.chunk.js.map",
+  "index.html": "/redux-myapps-auth/index.html",
+  "precache-manifest.9599f70b31d5055b937a222d0f7db8e7.js": "/redux-myapps-auth/precache-manifest.9599f70b31d5055b937a222d0f7db8e7.js",
+  "service-worker.js": "/redux-myapps-auth/service-worker.js",
+  "static/css/2.4f64ee0d.chunk.css.map": "/redux-myapps-auth/static/css/2.4f64ee0d.chunk.css.map",
+  "static/css/main.bcc41ff2.chunk.css.map": "/redux-myapps-auth/static/css/main.bcc41ff2.chunk.css.map"
 }

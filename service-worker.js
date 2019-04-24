@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-myapps-auth/precache-manifest.7b702ea12d12f0aa0968ae68374e16b9.js"
+  "/redux-myapps-auth/precache-manifest.9599f70b31d5055b937a222d0f7db8e7.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/react-myapps-auth/index.html", {
+workbox.routing.registerNavigationRoute("/redux-myapps-auth/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
