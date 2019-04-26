@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { Spinner, ListGroup, ListGroupItem, Button } from "reactstrap";
+import {
+  Spinner,
+  ListGroup,
+  ListGroupItem,
+  Button,
+  Collapse
+} from "reactstrap";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { connect } from "react-redux";
 import { getapps, getapp, deleteapp, updateapp } from "../actions/appActions";
@@ -11,6 +17,19 @@ class AppList extends Component {
     app: PropTypes.object.isRequired,
     isAuthenticated: PropTypes.bool
   };
+
+  constructor(props) {
+    super(props);
+    // this.toggle = this.toggle.bind(this);
+    this.state = { collapse: false, clickId: null };
+  }
+
+  toggle(id) {
+    // if open: close
+    if (this.state.collapse) {
+      this.setState(state => ({ collapse: false }));
+    } else this.setState(state => ({ collapse: true, clickId: id }));
+  }
 
   componentDidMount() {
     this.props.getapps();
@@ -53,6 +72,14 @@ class AppList extends Component {
                 <ListGroup className="mb-2">
                   <ListGroupItem className="text-white text-center bg-dark">
                     {title}{" "}
+                    <Button
+                      onClick={this.toggle.bind(this, _id)}
+                      className="remove-btn float-right"
+                      color="info"
+                      size="sm"
+                    >
+                      Show Details
+                    </Button>
                     {this.props.isAuthenticated ? (
                       <>
                         <Button
@@ -74,18 +101,23 @@ class AppList extends Component {
                       </>
                     ) : null}
                   </ListGroupItem>
-                  <ListGroupItem className="text-white bg-secondary">
-                    App Description: {description_short}
-                  </ListGroupItem>
-                  <ListGroupItem className="text-white bg-secondary">
-                    Used Technologies : {description_long}
-                  </ListGroupItem>
-                  <ListGroupItem className="text-white bg-secondary">
-                    Git Repo URL: {repo_url}
-                  </ListGroupItem>
-                  <ListGroupItem className="text-white bg-secondary">
-                    Deploy URL: {url}
-                  </ListGroupItem>
+
+                  <Collapse
+                    isOpen={this.state.collapse && this.state.clickId === _id}
+                  >
+                    <ListGroupItem className="text-white bg-secondary">
+                      App Description: {description_short}
+                    </ListGroupItem>
+                    <ListGroupItem className="text-white bg-secondary">
+                      Used Technologies : {description_long}
+                    </ListGroupItem>
+                    <ListGroupItem className="text-white bg-secondary">
+                      Git Repo URL: {repo_url}
+                    </ListGroupItem>
+                    <ListGroupItem className="text-white bg-secondary">
+                      Deploy URL: {url}
+                    </ListGroupItem>
+                  </Collapse>
                 </ListGroup>
               </CSSTransition>
             )
