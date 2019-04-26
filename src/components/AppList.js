@@ -106,10 +106,10 @@ class AppList extends Component {
                     isOpen={this.state.collapse && this.state.clickId === _id}
                   >
                     <ListGroupItem className="text-white bg-secondary">
-                      App Description: {description_short}
+                      App Description: {description_long}
                     </ListGroupItem>
                     <ListGroupItem className="text-white bg-secondary">
-                      Used Technologies : {description_long}
+                      Used Technologies : {description_short}
                     </ListGroupItem>
                     <ListGroupItem className="text-white bg-secondary">
                       Git Repo URL: {repo_url}
