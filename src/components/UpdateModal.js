@@ -101,7 +101,7 @@ class UpdateModal extends Component {
                     value={this.state.title}
                     onChange={this.onChange}
                   />
-                  <Label for="description_long">Title</Label>
+                  <Label for="description_long">Description</Label>
                   <Input
                     type="text"
                     name="description_long"
@@ -109,7 +109,7 @@ class UpdateModal extends Component {
                     value={this.state.description_long}
                     onChange={this.onChange}
                   />
-                  <Label for="description_short">Title</Label>
+                  <Label for="description_short">Used Technologies</Label>
                   <Input
                     type="text"
                     name="description_short"
@@ -117,7 +117,7 @@ class UpdateModal extends Component {
                     value={this.state.description_short}
                     onChange={this.onChange}
                   />
-                  <Label for="url">Title</Label>
+                  <Label for="url">App Deployment</Label>
                   <Input
                     type="text"
                     name="url"
@@ -125,7 +125,7 @@ class UpdateModal extends Component {
                     value={this.state.url}
                     onChange={this.onChange}
                   />
-                  <Label for="repo_url">Title</Label>
+                  <Label for="repo_url">Git repo</Label>
                   <Input
                     type="text"
                     name="repo_url"
